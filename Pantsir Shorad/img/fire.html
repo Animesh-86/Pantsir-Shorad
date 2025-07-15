@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Directional Buttons</title>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .btn {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        margin: 10px;
+        border-width: 20px 20px 20px 20px;
+        border-color: transparent transparent transparent transparent;
+        cursor: pointer;
+    }
+    .btn-north {
+        border-bottom-color: #576F4C;
+    }
+    .btn-northeast {
+        border-bottom-color: #576F4C;
+        border-left-color: #576F4C;
+    }
+    .btn-east {
+        border-left-color: #576F4C;
+    }
+    .btn-southeast {
+        border-left-color: #576F4C;
+        border-top-color: #576F4C;
+    }
+    .btn-south {
+        border-top-color: #576F4C;
+    }
+    .btn-southwest {
+        border-top-color: #576F4C;
+        border-right-color: #576F4C;
+    }
+    .btn-west {
+        border-right-color: #576F4C;
+    }
+    .btn-northwest {
+        border-right-color: #576F4C;
+        border-bottom-color: #576F4C;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <button class="btn btn-north"></button>
+    <button class="btn btn-northeast"></button>
+    <button class="btn btn-east"></button>
+    <button class="btn btn-southeast"></button>
+    <button class="btn btn-south"></button>
+    <button class="btn btn-southwest"></button>
+    <button class="btn btn-west"></button>
+    <button class="btn btn-northwest"></button>
+</div>
+
+</body>
+</html>
